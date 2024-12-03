@@ -77,8 +77,7 @@
     { "tag": "🔯 蟑螂自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "🍖 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"]},
-    { "tag": "🎯 全球直连", "type": "direct" },
-    { "tag": "🚫 拒绝连接", "type": "reject" }
+    { "tag": "🎯 全球直连", "type": "direct" }
   ],
   
   "route": 
@@ -89,7 +88,6 @@
    [
      {"action": "sniff"},
      {"protocol": "dns", "action": "hijack-dns"},
-     {"clash_mode": "reject", "action": "route", "outbound": "🚫 拒绝连接"},
      {"clash_mode": "direct", "action": "route", "outbound": "🎯 全球直连"},
      {"clash_mode": "global", "action": "route", "outbound": "GLOBAL"},
      {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "action": "route", "outbound": "🎯 全球直连"},
