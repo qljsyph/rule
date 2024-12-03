@@ -52,7 +52,7 @@
   "outbounds": [
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 蟑螂自动", "🍨 蟑螂", "🥘 鱼尾狮", "🍟 约翰牛", "🇨🇳 秃子", "🍣 脚盆鸡", "🍔 白头鹰",  "🏠 家宽", "🍤 手动切换", "🍖 自动选择", "🎯 全球直连"] },
     { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 蟑螂自动", "🍨 蟑螂", "🥘 鱼尾狮",  "🍟 约翰牛", "🇨🇳 秃子", "🍣 脚盆鸡", "🍔 白头鹰", "🍤 手动切换"] },
-    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🏠 家宽", "{all}"], "filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }]  },
+    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 蟑螂自动", "🍨 蟑螂", "🥘 鱼尾狮",  "🍟 约翰牛", "🇨🇳 秃子", "🍣 脚盆鸡", "🍔 白头鹰", "🍤 手动切换"] },
     { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 蟑螂自动", "🍨 蟑螂", "🥘 鱼尾狮",  "🍟 约翰牛", "🇨🇳 秃子", "🍣 脚盆鸡", "🍔 白头鹰", "🍤 手动切换"] },
     { "tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 蟑螂自动", "🍨 蟑螂", "🥘 鱼尾狮",  "🍟 约翰牛", "🇨🇳 秃子", "🍣 脚盆鸡", "🍔 白头鹰", "🍤 手动切换"] },
     { "tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 蟑螂自动", "🍨 蟑螂", "🥘 鱼尾狮",  "🍟 约翰牛", "🇨🇳 秃子", "🍣 脚盆鸡", "🍔 白头鹰", "🎯 全球直连"] },
@@ -68,7 +68,6 @@
     { "tag": "⏱️ Speedtest", "type": "selector", "outbounds": ["🎯 全球直连", "🍖 自动选择", "🚀 节点选择", "🍤 手动切换", "🍔 白头鹰"] },
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 节点选择","🎯 全球直连"] },
     { "tag": "🍤 手动切换", "type": "selector", "outbounds": ["{all}"]},
-    { "tag": "🏠 家宽", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["(?i)家宽|HKT|HKBN|Hinet|Apol|M1|CTM|SoftBank|KDDI|SoNet|Biglobe|SK|KT|LG|Verizon|AT&T|T-mobile|Frontier|Videotron|BT|Virgin|Vodafone|SFR|Turk Telekom|Telekom Malaysia|TM|VNPT|DIGI|JSC Kazakhtelecom|Mongolia Telecom|CAFE|Umniah"] }] },
     { "tag": "🍨 蟑螂", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["(?i)M1|SoftBank|KDDI|SoNet|Biglobe|Verizon|AT&T|T-mobile|Frontier|Videotron|BT|Virgin|Vodafone|SFR"] }] },
     { "tag": "🇨🇳 秃子", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇹🇼|TW|tw|台湾|台|TaiWan"] }] },
     { "tag": "🥘 鱼尾狮", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|加坡|Singapore"] }] },
