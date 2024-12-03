@@ -89,7 +89,6 @@
    [
      {"action": "sniff"},
      {"protocol": "dns", "action": "hijack-dns"},
-     {"clash_mode": "reject", "action": "route", "outbound": "🚫 拒绝连接"},
      {"clash_mode": "direct", "action": "route", "outbound": "🎯 全球直连"},
      {"clash_mode": "global", "action": "route", "outbound": "GLOBAL"},
      {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "action": "route", "outbound": "🎯 全球直连"},
