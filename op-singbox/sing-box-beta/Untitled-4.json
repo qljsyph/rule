@@ -74,7 +74,7 @@
     { "tag": "🥘 鱼尾狮", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|加坡|Singapore"] }] },
     { "tag": "🍟 约翰牛", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇬🇧|UK|uk|英国|英|伦敦|United Kingdom"] }] },
     { "tag": "🍣 脚盆鸡", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"] }] },
-    { "tag": "🍔 白头鹰", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"] }] },
+    { "tag": "🍔 白头鹰", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"] }, { "action": "exclude", "keywords": ["🇦🇹|🇷🇺|Austria|Russia|HongKong"] }] },
     { "tag": "🔯 蟑螂自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "🍖 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"]},
