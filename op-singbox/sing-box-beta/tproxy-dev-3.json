@@ -8,7 +8,7 @@
   "experimental": {
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
-      "external_ui": "/etc/sing-box/ui",
+      "external_ui": "/etc/sing-box/ui/zashboard",
       "secret": "1551",
       "external_ui_download_url": "https://ghp.ci/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "🎯 全球直连",
