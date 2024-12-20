@@ -101,7 +101,6 @@
       {"rule_set": "geosite-disney", "outbound": "🎥 Disney+"},
       {"rule_set": "geosite-bahamut", "outbound": "🇨🇳 台湾"},
       {"rule_set": ["geosite-apple", "geoip-apple"], "outbound": "🍏 Apple"},
-      {"rule_set": "geosite-speedtest", "outbound": "⏱️ Speedtest"},
       {"rule_set": "geosite-onedrive", "outbound": "🐬 OneDrive"},
       {"rule_set": "geosite-microsoft", "outbound": "🪟 Microsoft"},
       {"rule_set": "geosite-geolocation-!cn", "outbound": "🚀 节点选择"},
