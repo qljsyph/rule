@@ -128,7 +128,7 @@
       { "tag": "geosite-hbo", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/hbo.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-disney", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/disney.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-bahamut", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/disney.srs", "download_detour": "🎯 全球直连" },
-      { "tag": "geosite-adobe", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/adobe.srs", "download_detour": "🎯 全球直连" },
+      { "tag": "geosite-adobe", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/qljsyph/rules-icon/refs/heads/main/rule/singbox/adobe.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-steam", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-Xbox", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/xbox.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-playstation", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/playstation.srs", "download_detour": "🎯 全球直连" },
