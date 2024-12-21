@@ -4,11 +4,7 @@
     "level": "info",
     "timestamp": true
   },
-  "experimental": {
-    "cache_file": {
-      "enabled": true
-    }
-    },
+
   "dns": {
     "servers": [
       {"tag": "proxyDns", "address": "https://dns.google/dns-query", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "detour": "🚀 节点选择"},
