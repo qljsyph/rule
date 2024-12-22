@@ -4,7 +4,8 @@ DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,guguwangluo.win
 #DOMAIN-SUFFIX,fi.mirror.armbian.de
 
-
+# 域名关键字匹配
+DDOMAIN-KEYWORD,ghp.ci
 
 
 # 国外DNS
