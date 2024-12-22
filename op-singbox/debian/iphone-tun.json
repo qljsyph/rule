@@ -87,7 +87,7 @@
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
       {"domain_suffix": ["linux.do", "rousi.zip"], "outbound": "🎯 全球直连"},
-      {"domain_keyword": ["ghj"], "outbound": "🎯 全球直连"},
+      {"domain_keyword": "ghj", "outbound": "🎯 全球直连"},
       {"domain_keyword": "midjourney", "outbound": "🤖 OpenAI"},
       {"domain_suffix": "deepl.com", "outbound": "🤖 OpenAI"},
       {"rule_set": "geosite-private", "outbound": "🎯 全球直连"},
