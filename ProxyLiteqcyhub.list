@@ -3,6 +3,7 @@ DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,guguwangluo.win
 DOMAIN-SUFFIX,fi.mirror.armbian.de
+DOMAIN-SUFFIX,singbox.rt2224.top
 
 # 域名关键字匹配
 DDOMAIN-KEYWORD,ghp.ci
