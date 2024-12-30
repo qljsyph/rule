@@ -5,6 +5,23 @@ DOMAIN-SUFFIX,guguwangluo.win
 DOMAIN-SUFFIX,fi.mirror.armbian.de
 DOMAIN-SUFFIX,singbox.rt2224.top
 
+# 王者国际服
+DOMAIN-SUFFIX,hok-dr.intlgame.com
+DOMAIN-SUFFIX,hok.intlgame.com
+DOMAIN-SUFFIX,intlgame.com
+DOMAIN-SUFFIX,sgameglobal.com
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-KEYWORD,sgameglobal.com
+DOMAIN-SUFFIX,stamp.mp.nexon.com
+DOMAIN-SUFFIX,m.nexon.com
+DOMAIN-SUFFIX,ba.dn.nexoncdn.co.kr
+DOMAIN-SUFFIX,nxm-eu-bagl.nexon.com
+DOMAIN-SUFFIX,api.ngsm.nexon.com
+DOMAIN-SUFFIX,log.ngsm.nexon.com
+DOMAIN-SUFFIX,sdk-push.mp.nexon.com
+DOMAIN-SUFFIX,m-api.nexon.com
+DOMAIN-SUFFIX,jp.livelog.nexon.com
+
 # 域名关键字匹配
 DDOMAIN-KEYWORD,ghp.ci
 
@@ -28,3 +45,5 @@ IP-CIDR,1.0.0.1/32,no-resolve
 IP-CIDR,185.222.222.222/32,no-resolve
 IP-CIDR,208.67.222.222/32,no-resolve
 IP-CIDR,208.67.220.220/32,no-resolve
+IP-CIDR, 183.192.65.101/16, no-resolve
+IP-CIDR, 43.132.55.55/16, no-resolve
