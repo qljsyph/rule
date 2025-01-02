@@ -98,7 +98,7 @@
     "rules": [
       {"type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
-      {"clash_mode": "global", "outbound": "{all}"},
+      {"clash_mode": "global", "outbound": "🚀 节点选择"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["linux.do", "rousi.zip"], "outbound": "🎯 全球直连"},
       {"domain_keyword": "ghj", "outbound": "🎯 全球直连"},
