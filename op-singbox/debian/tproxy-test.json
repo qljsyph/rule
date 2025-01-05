@@ -11,13 +11,13 @@
       "external_ui": "/etc/sing-box/ui",
       "secret": "6886",
       "external_ui_download_url": "https://ghj.rt2224.top/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "🚀 节点选择",
+      "external_ui_download_detour": "🎯 全球直连",
       "default_mode": "rule"
     },
-  "cache_file": {
-    "enabled": true,
-    "path": "/etc/sing-box/cache.db",
-    "store_fakeip": false
+    "cache_file": {
+      "enabled": true,
+      "path": "/etc/sing-box/cache.db",
+      "store_fakeip": false
     }
   },
   
@@ -53,12 +53,20 @@
       "listen_port": 2080,
       "sniff": true,
       "users": []
+    },
+    {
+      "type": "socks",
+      "tag": "socks-in",
+      "listen": "0.0.0.0",
+      "listen_port": 1080,
+      "users": []
     }
   ],
 
-   "outbounds": [
-     { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🍨 香港", "🥘 新加坡", "🍟 英国", "🇨🇳 台湾", "🍣 日本", "🥓 韩国", "🍔 美国", "🍤 手动切换", "🍖 自动选择", "🎯 全球直连"] },
-     { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 香港自动", "🔯 韩国自动", "🔯 美国自动", "🍨 香港", "🥘 新加坡", "🍟 英国", "🇨🇳 台湾", "🍣 日本", "🥓 韩国", "🍔 美国", "🍤 手动切换"] },
+  "outbounds": [
+    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🍨 香港", "🥘 新加坡", "🍟 英国", "🇨🇳 台湾", "🍣 日本", "🥓 韩国", "🍔 美国", "🍤 手动切换", "🍖 自动选择", "🎯 全球直连"] },
+    { "tag": "socks-out", "type": "socks", "server": "telegram.org", "server_port": 1080, "version": "5" },
+    { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 香港自动", "🔯 韩国自动", "🔯 美国自动", "🍨 香港", "🥘 新加坡", "🍟 英国", "🇨🇳 台湾", "🍣 日本", "🥓 韩国", "🍔 美国", "🍤 手动切换"] },
      { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🥘 新加坡",  "🍟 英国", "🍣 日本", "🍔 美国", "🍤 手动切换"] },
      { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 香港自动", "🍨 香港", "🥘 新加坡",  "🍟 英国", "🇨🇳 台湾", "🍣 日本", "🍔 美国", "🍤 手动切换"] },
      { "tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🚀 节点选择", "🍖 自动选择", "🔯 香港自动", "🍨 香港", "🥘 新加坡",  "🍟 英国", "🇨🇳 台湾", "🍣 日本", "🍔 美国", "🍤 手动切换"] },
@@ -93,13 +101,14 @@
   ],
   
   "route": {
-        "auto_detect_interface": true,
-        "final": "🐠 漏网之鱼",
-        "default_mark": 666,
+    "auto_detect_interface": true,
+    "final": "🐠 漏网之鱼",
+    "default_mark": 666,
     "rules": [
       {"type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"rule_set": ["geosite-telegram", "geoip-telegram"], "outbound": "socks-out"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连"},
       {"domain_suffix": ["linux.do", "rousi.zip"], "outbound": "🎯 全球直连"},
       {"domain_keyword": "ghj", "outbound": "🎯 全球直连"},
@@ -124,9 +133,8 @@
       {"rule_set": "geosite-microsoft", "outbound": "🪟 Microsoft"},
       {"rule_set": "geosite-geolocation-!cn", "outbound": "🚀 节点选择"},
       {"rule_set": ["geoip-cn", "geosite-cn"], "outbound": "🎯 全球直连"}
-   ],
-    
-    "rule_set": [
+    ],
+  "rule_set": [
       { "tag": "geosite-chat", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-hbo", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/hbo.srs", "download_detour": "🎯 全球直连" },
@@ -161,6 +169,6 @@
       { "tag": "geoip-apple", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geoip-private", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs", "download_detour": "🎯 全球直连" }
-    ]
+   ]
   }
 }
