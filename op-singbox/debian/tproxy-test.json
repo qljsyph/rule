@@ -115,6 +115,7 @@
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连"},
+      {"domain": "5.5.5.5", "outbound": "🚫 拒绝连接"},
       {"domain_suffix": ["linux.do", "rousi.zip"], "outbound": "🎯 全球直连"},
       {"domain_keyword": "ghj", "outbound": "🎯 全球直连"},
       {"domain_keyword": "midjourney", "outbound": "🤖 OpenAI"},
