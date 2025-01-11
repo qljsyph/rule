@@ -1,0 +1,14 @@
+# 直连域名关键字匹配(国内域名不解析时，防止走代理使用)
+
+# 域名关键字匹配
+DOMAIN-KEYWORD,mirror
+#DOMAIN-KEYWORD,ghp
+DOMAIN-KEYWORD,ghj
+#DOMAIN-KEYWORD,rousi
+DOMAIN-KEYWORD,sixyin
+
+# Public Direct CDN 公共直连
+#DOMAIN-SUFFIX,ajax.aspnetcdn.com
+#DOMAIN-SUFFIX,ajax.cloudflare.com
+#DOMAIN-SUFFIX,cdnjs.cloudflare.com
+#DOMAIN-SUFFIX,code.jquery.com
