@@ -2,9 +2,9 @@
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,mirror
-#DOMAIN-KEYWORD,ghp
+DOMAIN-KEYWORD,ghp
 DOMAIN-KEYWORD,ghj
-#DOMAIN-KEYWORD,rousi
+DOMAIN-KEYWORD,rousi
 DOMAIN-KEYWORD,sixyin
 
 # Public Direct CDN 公共直连
