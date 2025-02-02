@@ -24,7 +24,7 @@ DOMAIN-SUFFIX,icloudnative.io
 # DOMAIN-SUFFIX,jp.livelog.nexon.com
 
 # 域名关键字匹配
-DDOMAIN-KEYWORD,ghp.ci
+DOMAIN-KEYWORD,ghp.ci
 
 
 # 国外DNS
