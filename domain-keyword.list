@@ -7,7 +7,7 @@ DOMAIN-KEYWORD,ghj
 DOMAIN-KEYWORD,sixyin
 
 # IP直连
-IP-CIDR,34.217.53.212
+IP-CIDR,34.217.53.212/24
 
 # Public Direct CDN 公共直连
 #DOMAIN-SUFFIX,ajax.aspnetcdn.com
